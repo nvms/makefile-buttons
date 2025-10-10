@@ -1,12 +1,12 @@
 {
-  "name": "makefile-buttons",
-  "displayName": "Makefile buttons",
-  "publisher": "hablof",
+  "name": "makefile-buttons-improved",
+  "displayName": "Makefile buttons improved",
+  "publisher": "nvms",
   "license": "MIT",
   "icon": "images/icon.png",
   "description": "Adds codelens buttons to your makefiles to run targets by mouse click",
   "repository": {
-    "url": "https://github.com/hablof/makefile-buttons"
+    "url": "https://github.com/nvms/makefile-buttons"
   },
   "version": "0.0.3",
   "engines": {
