@@ -1,4 +1,5 @@
 import * as vscode from "vscode";
+import path from "path";
 
 export function activate(context: vscode.ExtensionContext) {
   const codelensProvider = new MakefileCodelensProvider();
@@ -81,7 +82,6 @@ class MakefileCodelensProvider implements vscode.CodeLensProvider {
             tooltip: "executes target " + target,
           }),
         );
-        // }
       }
     }
     return codeLenses;
@@ -97,7 +97,6 @@ function runCommand(target: string, filePath: string) {
     t = vscode.window.createTerminal();
   }
 
-  const path = require("path");
   const makefileDir = path.dirname(filePath);
 
   t.show(false);
