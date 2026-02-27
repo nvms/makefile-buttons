@@ -1,14 +1,14 @@
 {
   "name": "makefile-buttons-improved",
-  "displayName": "Makefile buttons improved",
+  "displayName": "Makefile Buttons Improved",
   "publisher": "nvms",
   "license": "MIT",
   "icon": "images/icon.png",
-  "description": "Adds codelens buttons to your makefiles to run targets by mouse click",
+  "description": "Fork of Makefile buttons - opens a fresh terminal in the makefile's directory for each target",
   "repository": {
     "url": "https://github.com/nvms/makefile-buttons"
   },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.77.0"
   },

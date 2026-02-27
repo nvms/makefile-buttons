@@ -89,16 +89,9 @@ class MakefileCodelensProvider implements vscode.CodeLensProvider {
 }
 
 function runCommand(target: string, filePath: string) {
-  let t: vscode.Terminal;
-
-  if (vscode.window.activeTerminal) {
-    t = vscode.window.activeTerminal;
-  } else {
-    t = vscode.window.createTerminal();
-  }
-
   const makefileDir = path.dirname(filePath);
+  const t = vscode.window.createTerminal({ cwd: makefileDir });
 
   t.show(false);
-  t.sendText(`cd "${makefileDir}" && make ${target}`);
+  t.sendText(`make ${target}`);
 }
